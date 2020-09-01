@@ -198,3 +198,85 @@ a {
 .about .container > *:nth-child(2) {
     color: #069FA4;
 }
+
+.top-footer {
+  background: rgb(24, 21, 21);
+  color: #fff;
+  height: 10vh;
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+  flex: 3;
+}
+
+footer .f-icons {
+  flex: 1;
+}
+
+footer .f-icons i {
+  margin-left: 1.3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .f-icons i:hover {
+  color: #fff;
+}
+
+/* footer p {
+  text-align: center;
+  height: 5vh;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+} */
+
+@media screen and (max-width: 960px) {
+  #nav2 ul li:nth-child(4),
+  #nav2 ul li:nth-child(5),
+  #nav2 ul li:nth-child(6),
+  #nav2 ul li:nth-child(7) {
+    display: none;
+  }
+
+  footer h2 {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #nav1 .social a {
+    margin-left: 0.7rem;
+  }
+
+  footer .f-icons i {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #nav1 .social a {
+    display: none;
+  }
+
+  footer .f-icons i {
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  #showcase .showcase-content h1,
+  #showcase .showcase-content p,
+  #showcase .showcase-content a {
+    margin-top: 1rem;
+    font-size: 80%;
+  }
+
+  nav {
+    font-size: 60%;
+  }
+}
+
+
